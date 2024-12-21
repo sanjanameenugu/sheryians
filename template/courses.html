@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="{% static 'courses.css' %}">
+{% endblock style %}
+{% block body %}
+<div id="co1">
+<h1>we are not  a  <mark>course <br>factory</mark></h1>
+<br>
+<h3>we focus on courses that really help</h3>
+</div>
+<div id="co2">
+    <h4>courses which  do work ⬇️</h4>
+</div>
+<div class="cards-container">
+    <div class="card">
+        <img src="{% static '1.jpg' %}" alt="Front-End Domination" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINDI</span>
+            <h3>Front-End Domination: Create Anything with Code</h3>
+            <p class="price">₹ 4999 <span class="strike">₹ 9999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static '2.jpg' %}" alt="Back-End Domination" class="card-image">
+        <div class="card-content">
+                <span class="tag">HINDI</span>
+            <h3>Back-End Domination: Create Efficient Back-End</h3>
+            <p class="price">₹ 5999 <span class="strike">₹ 11999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static '3.jpg' %}" alt="Aptitude & Reasoning" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINGLISH</span>
+            <h3>Aptitude & Reasoning for Campus Placements</h3>
+            <p class="price">₹ 999 <span class="strike">₹ 1500</span> <span class="discount">33% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static '4.jpg' %}" alt="Java & DSA Domination" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINGLISH</span>
+            <h3>Java & DSA Domination</h3>
+            <p class="price">₹ 4999 <span class="strike">₹ 9999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static '5.jpg' %}" alt="Java & DSA Domination" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINGLISH</span>
+            <h3>three.js Domination</h3>
+            <p class="price">₹ 4999 <span class="strike">₹ 9999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+</div>
+{% endblock body %}

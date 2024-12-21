@@ -1,0 +1,181 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Header Styles */
+h1 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Tabs Styles */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.tabs button {
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    color: #666666;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tabs button:hover {
+    color: #007BFF;
+}
+
+.tabs button.active {
+    color: #007BFF;
+    border-bottom: 3px solid #007BFF;
+}
+
+/* Form Group Styles */
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #555555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007BFF;
+}
+
+/* Button Styles */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #007BFF;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Google Button */
+.btn.google {
+    background: #ffffff;
+    color: #555555;
+    border: 1px solid #cccccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn.google i {
+    color: #db4437;
+}
+
+.btn.google:hover {
+    background: #f4f4f4;
+}
+
+/* Or Separator */
+.or {
+    position: relative;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #777777;
+}
+
+.or:before,
+.or:after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.or:before {
+    left: 0;
+}
+
+.or:after {
+    right: 0;
+}
+
+/* Signup Link */
+.signup {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.signup:hover {
+    text-decoration: underline;
+}
+
+/* Keyframe Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

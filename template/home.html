@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+{% endblock style %}
+{% block body %}
+
+
+<div id="b1">
+    <h1>we only <mark>teach </mark>
+        <br>what we are really <br> 
+        really good at.      </h1>
+        <p>ready to <mark>accelarate your <br>
+               carrer</mark> with customised courses <br>
+              and leave your mark in the tech  <br>
+              industry  </p>
+</div>
+<div id="b5">       
+    <button class="b5bu" onclick="fun()"> check courses-make an impact</button>
+</div>
+<div id="b2">
+    <h3>25K+ <br>students taught </h3>
+    <h3>20+ <br>instructors</h3>
+    <h3>431K+ <br>youtube subs</h3>
+</div>
+
+<div id="b4">
+    <h2> we do  whatever it takes to help you
+        <br><mark>understand the concepts</mark>
+    </h2>
+    <iframe width="952" height="536" src="https://www.youtube.com/embed/60SRAWmMXyc" title="You Are Not Yet Ready | Placements | Open Source" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<div class="cards-container">
+    <div class="card">
+        <img src="{% static '1.jpg' %}" alt="Front-End Domination" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINDI</span>
+            <h3>Front-End Domination: Create Anything with Code</h3>
+            <p class="price">₹ 4999 <span class="strike">₹ 9999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static '2.jpg' %}" alt="Back-End Domination" class="card-image">
+        <div class="card-content">
+                <span class="tag">HINDI</span>
+            <h3>Back-End Domination: Create Efficient Back-End</h3>
+            <p class="price">₹ 5999 <span class="strike">₹ 11999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static '3.jpg' %}" alt="Aptitude & Reasoning" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINGLISH</span>
+            <h3>Aptitude & Reasoning for Campus Placements</h3>
+            <p class="price">₹ 999 <span class="strike">₹ 1500</span> <span class="discount">33% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+    <div class="card">
+        <img src="{% static '4.jpg' %}" alt="Java & DSA Domination" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINGLISH</span>
+            <h3>Java & DSA Domination</h3>
+            <p class="price">₹ 4999 <span class="strike">₹ 9999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="{% static '5.jpg' %}" alt="Java & DSA Domination" class="card-image">
+        <div class="card-content">
+            <span class="tag">HINGLISH</span>
+            <h3>three.js Domination</h3>
+            <p class="price">₹ 4999 <span class="strike">₹ 9999</span> <span class="discount">50% OFF</span></p>
+            <button class="view-btn">View Details</button>
+        </div>
+    </div>
+</div>
+<div id="company">
+    <h1>top <mark>compines</mark> our students 
+        <br>working with</h1>
+        <br>
+        <img id='comp' src="{% static 'c3.jpg' %}" alt="">
+        <button class="b5bu">explore courses</button>
+</div>
+
+{% endblock body%}
