@@ -1,0 +1,29 @@
+.container{
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    background-color: gray;
+    margin-top: 250px;
+}
+h1{
+    color: whitesmoke;
+}
+.tabs{
+    width: 90%;
+    display: flex;
+
+}
+.tabs button{
+    background-color: transparent;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.active{
+    text-decoration: underline aquamarine;
+    
+}

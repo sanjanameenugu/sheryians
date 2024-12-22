@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    {% block style %}
+    {% endblock style %}
+    <script src="{% static 'script.js' %}" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <li><img src="{% static 'logo.png'%}" alt="">sheryians coding school</li> 
+        </div>
+        <ul>
+            <li><a href="{% url 'main:home' %}">home</a></li>
+            <li><a href="{% url 'courses:courses'%}">courses</a></li>
+            <li><a href="">bootcamp(kodr)</a></li>
+            <li><a href="" onclick="fun()">request callback</a></li>
+            <li><a href="{% url 'sigin:sigin' %}"><button>sig in</button></a></li>
+        </ul>
+    </nav>
+    <div id="req">
+        <button id="close-btn" onclick="closeModal()">❌</button>
+        <h1>Welcome</h1>
+        <h4>Fill out the form below</h4>
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+            
+            <label for="datetime">Select Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="overlay"></div>
+    
+    {% block body %}
+    {% endblock body%}
+   
+    <footer>
+        <hr>
+        <div class="footer">
+            <ol>
+            <li><img src="{% static 'logo.png'%}" alt=""></li>
+            <li><h4>let's connect with our socials</h4></li>
+            <li>
+            <h5><i class="fa-brands fa-instagram"></i></h5>
+            <h5><i class="fa-brands fa-linkedin"></i></h5>
+            <h5><i class="fa-brands fa-discord"></i></h5>
+            <h5><i class="fa-brands fa-youtube"></i></h5>
+            <h5><i class="fa-brands fa-twitter"></i></h5>
+        </li>
+            <ol></ol>
+
+        </div>
+        <div class="footer">
+            <ol>
+                <li class="lis-foot"><h4>company</h4></li>
+                <li class="lis-foot">About us</li>
+                <li class="lis-foot">support</li>
+                <li class="lis-foot">privacy policy</li>
+                <li class="lis-foot">terms and condition</li>
+                <li class="lis-foot">pricing and refund</li>
+                <li class="lis-foot">hire from us </li>
+                <li class="lis-foot">big bounty</li>
+            </ol>
+        </div>
+        <div class="footer" id="f3">
+            <ol>
+                <li class="lis-foot"><h4>coumminty</h4></li>
+                <li class="lis-foot">inertia</li>
+                <li class="lis-foot">discord</li>
+            </ol>
+        </div>
+        <div class="footer">
+            <ol>
+                <li class="lis-foot"><h4 id="he1">get in touch</h4></li>
+                <li class="lis-foot">91+9346184311</li>
+                <li class="lis-foot">91+ 63022 58258</li>
+                <li class="lis-foot">hrprem@gmail.com</li>
+                <li class="lis-foot">kphb-6phase,hyderabad</li>
+            </ol>
+        </div>
+        <hr><hr>
+        <p>copyrights</p>
+    </footer>
+    
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+<link rel="stylesheet" href="{% static 'sigin.css' %}">
+{% endblock style %}
+{% block body %}
+    <div class="container">
+        <h1>sigin</h1>
+        <div class="tabs">
+            <button class="active" onclick="toggleTab('phone')">Phone</button>
+            <button onclick="toggleTab('email')">Email</button>
+        </div>
+        <div id="phone-tab">
+            <form>
+                <div class="form-group">
+                    <label for="phone">Mobile Number *</label>
+                    <input type="text" id="phone" placeholder="Enter Your Mobile Number">
+                </div>
+               
+            </form>
+        </div>
+        <div id="email-tab" style="display: none;">
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" placeholder="Enter Your Email Address">
+                    <input type="password" id="password" placeholder="enter your password">
+                </div>
+                <button type="button" class="btn">continue</button>
+            </form>
+        </div>
+        <p class="or">Or</p>
+        <button class="btn google"><i class="fa-brands fa-google"></i>Continue with Google</button>
+        <a href="#" class="signup">Create a New Account</a>
+    </div>
+    <script src="{% static 'sigin.js' %}"></script>
+</body>
+</html>
+
+
+
+{% endblock body %}
